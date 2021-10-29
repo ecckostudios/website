@@ -14,3 +14,5 @@ _João Pedro e Marcos Vinicius_
 - Criar o arquivo ***index.html*** e inserir o código-base
 - Criar o arquivo ***style.css*** e vincular ao HTML base
 - Criar o arquivo ***functions.js*** e vincular com o HTML base
+
+-Cabeçalho do site + Navegação dos menus
