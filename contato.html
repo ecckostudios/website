@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,12 @@
     <title>Eccko Studios - Contatos</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="header" class="wrapper" >
+    <div id="header" class="wrapper">
         <a href="index.html">
             <img src="imagens/logo.png" alt="">
-           </a>
+        </a>
         <nav id="menu">
             <a href="index.html">Home</a>
             <a href="quemsomos.html">Quem Somos</a>
@@ -21,7 +23,34 @@
     </div>
     <!-- Começar aqui -->
     
+    <div id="form-content" class="wrapper">
+        <form id="contato">
+            <div class="form-group">
+                <label for="Nome Completo"> Nome Completo </label>
+                <input type="text" name="nome" id="nome">
+            </div>
+
+            <div class="form-group">
+                <label for="Email"> E-mail* </label>
+                <input type="text" name="Email" id="Email">
+
+            </div>
+
+            <div class="form-group">
+                <label for="Whatsapp"> Whatsapp </label>
+                <input type="text" name="Whatsapp" id="Whatsapp">
+
+            </div>
+            <div class="form-group">
+                <label for="Mensagem"> Mensagem </label>
+                <textarea name="Mensagem" id="Mensagem" ></textarea>
+                
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
     <!-- Terminar aqui  -->
     <script src="function.js"></script>
 </body>
+
 </html>

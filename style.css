@@ -67,18 +67,105 @@ body{
     width: 150px;
 
 }
-#promos{
-    display : flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
 
 }
 #promos a img{
     margin-top: 50px;
     margin-bottom: 5px;
-    width: 450px;
+    width: 1000px;
 
 }
-#Sobre 
 
+}
+#texto img{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#texto p { 
+    max-width: 80%;
+}
+
+#p {
+    font-size: 20px;
+    margin-top: 20px;
+    margin bottom: 15px; ;
+    font-weight: 500 ;
+}
+#ofertas img{
+    max-width: 150px;
+}
+@keyframes fadein {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  body {
+    background-color: #ffffff;
+    height: 100vh;
+    animation: fadein 1s;
+  }
+  
+  .wrapper {
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  form{
+    width: 100%;
+
+  }
+  
+  form input,
+  form textarea,
+  form button {
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 5px;
+    border: 1px solid transparent;
+    /* transition: border-color linear 0.2s; */
+  }
+  form input: focus,
+  form textarea: focus {
+      border: 2px  
+  }
+  form textarea {
+      resize: none;
+  }
+  #form-content {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.63);
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px auto;
+    max-width: 500px;
+  }
+  .form-group{
+      display: flex;
+      flex-direction: column;
+      
+
+  }
+
+  .form-group input,
+  .form-group textarea {
+      
+  }
+  form button {
+      width: 100%;
+      margin-top: 30px;
+      background-color: rgb(44, 78, 78);
+      color: white;
+      font-weight: 700;
+      font-size: 15px;
+      
+  }
+  form button:hover {
+      background-color:rgb(44, 78, 78) ;
+  }
