@@ -39,7 +39,6 @@ body{
 
 #banner{
     width: 100%;
-    background-color: #111;
     height: 350px;
 }
 #marcas{
@@ -170,12 +169,12 @@ body{
       background-color:rgb(44, 78, 78) ;
   }
   #ofertas{
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      display: grid;
+     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+     column-gap: 5px;
   }
 
-  #card{
+  .card{
       width: 100%;
       max-width: 320px;
       padding: 10px;
@@ -183,13 +182,64 @@ body{
       display: flex;
       flex-direction: column;
       align-items: center;
-      border: 1px solid black
+      border: 1px solid black;
+      
   }
 
-  #card button{
-      background-color: #222;
+  .card button{
+      background-color: transparent;
       color: #ffffff;
       padding: 5px;
-      /* display: none; */
+      transition: box-shadow 1s;
+      color: transparent;
   }
 
+  .card button:focus {
+    color: #FFF;
+    box-shadow: inset 0 -3.25em 0 0 #000000;
+  }
+
+.card h3{
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.card s{
+    font-size: 12px;
+}
+#contato {
+ color: #FFF;
+}
+
+#h2 {
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+.plate{
+    width: 100%;
+    padding: 8px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+}
+
+.plate button{
+    background-color: transparent;
+    color: #ffffff;
+    padding: 5px;
+    transition: box-shadow 1s;
+    color: transparent;
+}
+
+.plate button:focus {
+  color: #FFF;
+  box-shadow: inset 0 -3.25em 0 0 #000000;
+}
+.plate h3{
+    font-size: 14px;
+    margin-top: 10px;
+}

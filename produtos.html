@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +8,12 @@
     <title>Eccko Studios - Produtos</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div id="header" class="wrapper" >
+    <div id="header" class="wrapper">
         <a href="index.html">
             <img src="imagens/logo.png" alt="">
-           </a>
+        </a>
         <nav id="menu">
             <a href="index.html">Home</a>
             <a href="quemsomos.html">Quem Somos</a>
@@ -20,8 +22,91 @@
         </nav>
     </div>
     <!-- Começar aqui -->
-    
+    <h2 id="h2">Produtos</h2>
+    <div id="ofertas">
+        <div class="plate">
+            <img src="imagens/camisamasculina.png" alt="">
+            <h3>Camisa Masc. M</h3>
+            <span>R$ 80,00</span>
+            <button>Comprar</button>
+
+        </div>
+        <div class="plate">
+            <img src="imagens/jacket.jpg" alt="">
+            <h3>Jaqueta Puffer </h3>
+            <span>R$ 200,00</span>
+            <button>Comprar</button>
+
+        </div>
+        <div class="plate">
+            <img src="imagens/1017-alyx-9sm-black-buckle-chelsea-boots.jpg" alt="">
+            <h3>ALYX 9SM Boots</h3>
+            <span>R$ 329,99</span>
+            <button>Comprar</button>
+
+        </div>
+        <div class="plate">
+            <img src="imagens/cp-company-tan-flatt-nylon-cargo-pants.jpg" alt="">
+            <h3>Calça Cargo</h3>
+            <span>R$ 120,00</span>
+            <button>Comprar</button>
+
+        </div>
+        <div class="plate">
+            <img src="imagens/givenchy-brown-lambskin-down-puffer-jacket.jpg" alt="">
+            <h3>Calça Cargo</h3>
+            <span>R$ 120,00</span>
+            <button>Comprar</button>
+
+        </div>
+        <div class="plate">
+            <img src="imagens/converse-black-golf-le-fleur-edition-gianno-sneakers.jpg" alt="">
+            <h3>Calça Cargo</h3>
+            <span>R$ 120,00</span>
+            <button>Comprar</button>
+        </div>
+        <div class="plate">
+            <img src="imagens/essentials-ssense-exclusive-beige-half-zip-track-jacket.jpg" alt="">
+            <h3>Calça Cargo</h3>
+            <span>R$ 120,00</span>
+            <button>Comprar</button>
+        </div>
+        <div class="plate">
+            <img src="imagens/marni-black-lambskin-pants.jpg" alt="">
+            <h3>Calça Cargo</h3>
+            <span>R$ 120,00</span>
+            <button>Comprar</button>
+        </div>
+        <div class="plate">
+            <img src="imagens/.jpg" alt="">
+            <h3>Calça Cargo</h3>
+            <span>R$ 120,00</span>
+            <button>Comprar</button>
+        </div>
+    </div>
+
+
+    </div>
+
     <!-- Terminar aqui  -->
     <script src="function.js"></script>
+    <script>
+
+        var card = document.getElementsByClassName("plate")
+
+        let products = [...card]
+
+
+        products.map(item => {
+
+            item.addEventListener("mouseover", () => {
+                item.childNodes[7].focus()
+            })
+            item.addEventListener("mouseleave", () => {
+                item.childNodes[7].blur()
+            })
+        })
+    </script>
 </body>
+
 </html>

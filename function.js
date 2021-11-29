@@ -1,6 +1,6 @@
 var recebidos = JSON.parse(localStorage.getItem("@website/messangens")) || [];
 var contato = document.getElementById("contato");
-var card.addEventListener("mouseenter", function( event );
+
 
 contato.addEventListener("submit", event => {
     event.preventDefault();
